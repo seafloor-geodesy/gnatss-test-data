@@ -48,6 +48,8 @@ The zip file contains the following directory structure:
 │   ├── NOV
 │   │   ├── NCL1_INSPVAA.dat
 │   │   └── NCL1_INSSTDEVA.dat
+│   ├── DFOP
+│   │   └── *DFOP00.raw
 │   ├── ctd
 │   │   └── CTD_NCL1_Ch_Mi
 │   ├── deletns.dat
@@ -87,6 +89,7 @@ with `NCL1` being the station name and a subdirectory of the year.
 - `NOV`: The `NOV` directory contains the `INS` data.
   - `NCL1_INSPVAA.dat`: The `NCL1_INSPVAA.dat` file contains the INS Position, Velocity and Attitude data. See Novatel [`INSPVA`](https://docs.novatel.com/OEM7/Content/SPAN_Logs/INSPVA.htm).
   - `NCL1_INSSTDEVA.dat`: The `NCL1_INSSTDEVA.dat` file contains the INS PVA standard deviations data. See Novatel [`INSSTDEV`](https://docs.novatel.com/OEM7/Content/SPAN_Logs/INSSTDEV.htm).
+- `DFOP`: The `DFOP` directory contains raw acoustics data logged by the Sonardyne GPS-A payload. These files are named `*DFOP00.raw`.
 - `ctd`: The `ctd` directory contains the `CTD` data.
 - `deletns.dat`: The `deletns.dat` file contains the deletions data from the Fortran software.
 - `quality_control.csv`: The `quality_control.csv` file contains the quality control human generated data for GNATSS.
