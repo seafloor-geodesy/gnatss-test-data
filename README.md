@@ -73,6 +73,8 @@ The zip file contains the following directory structure:
 │       │   └── sfg12100.pos
 │       └── WG_20220729
 │           └── *.tar.gz
+├── DFOP_test_files
+│   └── *DFOP00.raw
 └── targz_test_files
     └── *.tar.gz
 ```
@@ -99,7 +101,8 @@ with `NCL1` being the station name and a subdirectory of the year.
       - `GPS_POS_FREED`: Legacy text-column format
       - `*.pos`: [CSRS-PPP](https://webapp.csrs-scrs.nrcan-rncan.gc.ca/geod/tools-outils/ppp.php?locale=en) .pos file
     - `WG_*`: The `WG_*` directory contains the raw files telemetered from the wave glider. These files are stored in a `tar.gz` format.
-- `2022/targz_test_files`: A directory containing a small number of QC files telemetered to shore from an SV-3 Wave Glider during data collection, stored in a `tar.gz` format. There is one file collected each year from the years 2021-2025.
+- `2022/DFOP_test_files`: A directory containing two DFOP00.raw files. These files each contain a few records that are corrupted. Upon successful execution, GNATSS should skip the corrupted records and load the rest of the files.
+- `2022/targz_test_files`: A directory containing QC files telemetered to shore from an SV-3 Wave Glider during data collection, stored in a `tar.gz` format. There is one file collected each year from the years 2021-2025, as well as from a full survey containing a few corrupted files that should be skipped upon loading.
 
 ## Usage
 
